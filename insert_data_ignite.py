@@ -47,10 +47,9 @@ bounce_reason = ["email not exist","blocked attachment","mailbox full","message 
 bounce_class_type = ["bounce class one","bounce class two","bounce class three"]
 bounce_code = [200,400,500,800]
 
-test_million = []
+
 # insert-data
 for i in range(1000000):
-    test_million.append(i)
     timestamp = time.time()
     dt_object = datetime.fromtimestamp(timestamp)
     data = [str(dt_object)+str(i).split()[0]+str(i),str(123*i),str(1234*i),random.choice(random_list_email),random.choice(random_list_domain),
